@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zongze Li</title>
+  <meta name="description" content="Zongze Li, M.Phil. student at Hong Kong Baptist University working on foundation model reasoning.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=3">
+  <script>
+    // Apply a saved theme before first paint so the page does not flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3.3 2 8.7 2 12 0v-5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  </svg>
+
+  <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+    <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+    <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+  </button>
+
+  <main class="container">
+    <header class="intro">
+      <h1>Zongze Li</h1>
+      <p>
+        I'm a first-year M.Phil. student in Computer Science at
+        <a href="https://www.comp.hkbu.edu.hk/">Hong Kong Baptist University</a>, advised by
+        <a href="https://bhanml.github.io/">Prof. Bo Han</a> in the
+        <a href="https://tmlr-group.github.io/">TMLR Group</a>. I received my B.Eng. in Computer Science
+        and Technology from <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a>
+        in 2026.
+      </p>
+      <p>
+        My research focuses on <strong>foundation model reasoning</strong>: understanding what actually
+        drives an LLM's reasoning, and making it stronger through training-time and test-time methods.
+      </p>
+      <p>
+        I am always open to discussions and possible collaborations. Please feel free to
+        <a href="mailto:zongze062@gmail.com">email me</a>!
+      </p>
+      <nav class="links" aria-label="Contact and profiles">
+        <a href="mailto:zongze062@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Email</a>
+        <a href="https://scholar.google.com/citations?user=S08px7gAAAAJ&amp;hl=en"><svg class="icon"><use href="#i-scholar"/></svg>Google Scholar</a>
+        <a href="https://github.com/zongze-lee"><svg class="icon"><use href="#i-code"/></svg>GitHub</a>
+        <!-- Uncomment when an English CV is ready:
+        <a href="cv.pdf"><svg class="icon"><use href="#i-file"/></svg>CV</a>
+        -->
+      </nav>
+    </header>
+
+    <section id="news">
+      <h2>Updates</h2>
+      <ul class="dots">
+        <li><span class="date">Sep 2026:</span> Our paper <a href="https://openreview.net/forum?id=pZsUT3QB69">CRU</a> is accepted by NeurIPS 2026!</li>
+        <li><span class="date">Jun 2026:</span> I graduated from HUST with a B.Eng. in Computer Science and Technology!</li>
+        <li><span class="date">Jan 2026:</span> Our paper <a href="https://arxiv.org/abs/2603.05900">RePO</a> is accepted by ICLR 2026!</li>
+        <li><span class="date">Oct 2025:</span> We open-sourced <a href="https://alphaapollo.org/">AlphaApollo</a>, an agentic LLM reasoning system. Check out our <a href="https://arxiv.org/abs/2510.06261">paper</a> and <a href="https://github.com/tmlr-group/AlphaApollo">code</a>!</li>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <h3>Selected Preprints</h3>
+      <div class="papers">
+        <article class="paper">
+          <h4>AlphaApollo: A System for Deep Agentic Reasoning</h4>
+          <p class="authors">Zhanke Zhou, Chentao Cao, Xiao Feng, Xuan Li, <span class="me">Zongze Li</span>, Xiangyu Lu, Jiangchao Yao, Weikai Huang, Tian Cheng, Jianghangfan Zhang, Tangyu Jiang, Linrui Xu, Yiming Zheng, Brando Miranda, Tongliang Liu, Sanmi Koyejo, Masashi Sugiyama, Bo Han</p>
+          <div class="meta">
+            <span class="venue">Technical Report</span>
+            <a href="https://arxiv.org/pdf/2510.06261">Paper</a>
+            <a href="https://github.com/tmlr-group/AlphaApollo">Code</a>
+            <a href="https://alphaapollo.org/">Website</a>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h4>AlphaDiana: A System for Evaluating Reasoning Agents</h4>
+          <p class="authors">Zhanke Zhou, <span class="me">Zongze Li</span>, Weikai Huang, Xuan Li, Chentao Cao, Xiao Feng, Xiangyu Lu, Jinbo Hu, Menghan Lu, Yi Xie, Nico Pelleriti, Shiyang Liu, Max Zimmer, Brando Miranda, Jiangchao Yao, Bo Liu, Sanmi Koyejo, Sebastian Pokutta, Bo Han</p>
+          <div class="meta">
+            <span class="venue">Technical Report</span>
+            <a href="https://openreview.net/attachment?id=4vARlk9o95&amp;name=pdf">Paper</a>
+            <a href="https://github.com/tmlr-group/AlphaDiana">Code</a>
+          </div>
+        </article>
+      </div>
+
+      <h3>Selected Conference Papers</h3>
+      <div class="papers">
+        <article class="paper">
+          <h4>On the Fragility of Latent Knowledge: Layer-wise Influence under Unlearning in Large Language Model</h4>
+          <p class="authors">Jianing Zhu, <span class="me">Zongze Li</span>, Chandler Squires, Qizhou Wang, Bo Han, Pradeep Ravikumar</p>
+          <div class="meta">
+            <span class="venue main">NeurIPS 2026</span>
+            <a href="https://openreview.net/forum?id=pZsUT3QB69">Paper</a>
+          </div>
+        </article>
+
+        <article class="paper">
+          <h4>Reference-guided Policy Optimization for Molecular Optimization via LLM Reasoning</h4>
+          <p class="authors">Xuan Li, Zhanke Zhou, <span class="me">Zongze Li</span>, Jiangchao Yao, Yu Rong, Lu Zhang, Bo Han</p>
+          <div class="meta">
+            <span class="venue main">ICLR 2026</span>
+            <a href="https://arxiv.org/abs/2603.05900">Paper</a>
+            <a href="https://github.com/tmlr-group/RePO">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><span class="date">2026 – now</span><span><strong>Hong Kong Baptist University</strong><br><span class="detail">M.Phil. in Computer Science · Advisor: Prof. Bo Han</span></span></li>
+        <li><span class="date">2022 – 2026</span><span><strong>Huazhong University of Science and Technology</strong><br><span class="detail">B.Eng. in Computer Science and Technology</span></span></li>
+      </ul>
+    </section>
+
+    <section id="service">
+      <h2>Service</h2>
+      <ul class="dots">
+        <li><strong>Conference Reviewer:</strong> ICLR 2027</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2026 Zongze Li · Last updated September 2026</footer>
+
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>
